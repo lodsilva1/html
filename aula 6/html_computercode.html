@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Exemplo de exibição de códigos
+        </title>
+    </head>
+    <style>
+        .paragrafo{ color: indigo;
+            background-color: cadetblue; 
+        }
+        var{
+            color: crimson;
+        }
+    </style>
+    <body>
+        <h1>Inserir códigos para exibição</h1>
+        <!-- <var> define que determinado temor ou expressão é uma variável -->
+        <p class="paragrafo"> Efetuar a soma das variáveis <var>x</var> e <var>y</var></p>
+        <!--Inserir um trecho de código para exibição em tela-->
+        <!-- <pre texto pre formatado -->
+        <pre><code>
+            int x=1;
+            int y=2;
+            int z=x+y;      
+            Console.WriteLine (z); 
+        </code></pre>
+        <!-- <samp> define um exemplo ou saída -->
+        <p><samp>
+         3   
+        </samp></p>
+        <!--<kdb> ressalta que é uma opção teclada-->
+         
+        <p>Pressione <kbd>CRTL+S</kbd> para salvar</p> 
+        <h2>Inserir Emoji ou Simbolos</h2>
+        <h3>Hexadecimal</h3>
+        <p> &#x1f605; </p>  
+        <p> &#x1F60E;</p>
+
+        <h3>Decimal</h3>
+        <p> &#128517;</p>
+    </body>
+</html>

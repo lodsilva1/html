@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Formulário
+        </title>
+        
+        <script type="text/javascript">
+            function Enviar (){
+                var par = document.createElement('p')
+                var nome = document.getElementById("formNome");
+                var mensagem = '';
+
+                if(nome.value !=""){
+                   var txt = ' Agradecemos o contato. \n' +  nome.value +  ' não deixe de voltar \n';
+                   var p2 = document.createElement('P');
+                   p2.textContent = txt;
+                   p2.style.backgroundColor="Lightblue";
+                   document.body.appendChild(p2);
+                }
+
+                
+                    var mail = document.getElementById('formEmail');
+                    if(mail.value!='')
+                {
+                    var txt2 = 'O email informado é:  ' + mail.value;
+                    var p3 = document.createElement('p');
+                    p3. textContent = txt2;
+                    p3.style.color = "red"; 
+                    document.body.appendChild(p3);
+                }
+
+                var valores =document.getElementsByName("rCidade");
+                for (var i=0;i<valores.length;i++)
+
+                {
+                  if (valores[i].checked)
+
+                  {
+                    mensagem = mensagem + " " + valores[i].value + ' está selecionado \n ';
+                  }  
+
+                  else 
+                  { 
+                    mensagem = mensagem + " " + valores[i].value + ' não está selecionado \n ';
+                  }  
+                }
+                
+                par.textContent = mensagem;
+                document.body.appendChild(par);
+                //alert (mensagem);
+            }
+
+        
+
+        </script>
+
+    </head>
+    <body>
+        <h1>Exemplo de elementos de um Formulário</h1>
+
+        <form>
+          <label for="formNome">Nome: </label><br>
+          <input type="text" id="formNome" name="formNome" placeholder=" Nome Sobrenome" required><br><br> 
+          <label for="formEmail">Email: </label><br> 
+          <input type="email"  name="formEmail" id="formEmail" placeholder="email@email.com" required><br>
+         <br><br>
+
+         <fieldset>
+            <legend> Selecione sua Cidade</legend>
+
+       <input type="radio" id="rCidade" name="rCidade" value="São Paulo">
+       <label for="rCidade">São Paulo </label><br>
+       
+       <input type="radio" id="rCidade2" name="rCidade" value="Osasco">
+       <label for="rCidade2">Osasco </label><br><br>
+       </fieldset><br>
+
+       <input type="button" id="btnSalvar" onclick="Enviar()" value="Salvar">
+    </form>
+
+    </body>
+</html>
+
+
+
+
+
+

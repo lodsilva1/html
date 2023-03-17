@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Formulário
+        </title>
+    </head>
+
+    <body>
+        <h1>Exemplo de elementos de um Formulário</h1>
+        <form>
+          <br>
+          <label for="formNome">Nome: </label><br>
+          <input type="text" id="formNome" name="formNome"><br><br> 
+          <label for="formEmail">Email: </label><br> 
+          <input type="email"  name="formEmail" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" size="45" required> <br><br>
+
+          <fieldset>
+               <legend> Selecione sua Cidade</legend>
+
+          <input type="radio" id="rCidade" name="rCidade" value="SaoPaulo">
+          <label for="rCidade">São Paulo </label><br>
+          
+          <input type="radio" id="rCidade" name="rCidade2" value="Osasco">
+          <label for="rCidade2">Osasco </label><br><br>
+          </fieldset><br>
+
+          <fieldset>
+            <legend>Selecione os meios de transporte utilizados</legend>
+          <input type="checkbox" nome="cVeiculo" id="cVeiculo" value="Onibus">
+          <label for="cVeiculo">Ônibus </label><br>
+
+          <input type="checkbox" nome="cVeiculo" id="cVeiculo2" value="Trem">
+          <label for="cVeiculo2">Trem </label><br>
+
+          <input type="checkbox" nome="cVeiculo" id="cVeiculo3" value="Metro">
+          <label for="cVeiculo3">Metrô </label><br>
+        </fieldset><br>
+        
+        <fieldset>
+        <label for="cor"> Selecione a Cor desejada</label>
+        <input type="color" name="cor" id="cor">
+        </fieldset><br>
+        
+        <br>
+        <label for="senha"> Digite sua senha</label>
+        <input type="password" name="senha" id="senha" minlength="3" maxlength="15" required><br>
+
+        <input type="submit" id="btnSalvar" value="Salvar">
+
+        </form>
+    </body>
+</html>
