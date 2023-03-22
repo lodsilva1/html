@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body style=" background-color: rgba(160, 218, 218, 0.616);"></body>
+        <style>
+            h1 {color:red;}
+            h1 {font-style:italic ;}
+            label{color:blue;}
+            label{font-weight:bold;}
+            label{font-family:Impact;}
+        </style>    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Formulário
+        </title>
+        
+
+      <script type="text/javascript">
+            //°C=(°F-32)/1.8
+            //°C=K-273.15
+           
+            function Converter() {
+
+               let f = document.getElementById("tempF").value;
+               let c = document.getElementById("tempC").value;
+               let k = document.getElementById("tempK").value;
+
+               if (f != "") {
+               
+               c =(f-32)/1.8;
+               document.getElementById("tempC").value = c;
+               k = (f-32)/1.8+273;
+               document.getElementById("tempK").value = k; 
+            }
+
+            else if (c != "") {
+              f =(c*9/5)+ 32;
+               document.getElementById("tempF").value = f;
+               k = c*1+273;
+               document.getElementById("tempK").value = k; 
+            }
+
+            
+            if(c==""&& f==""&& k=="")
+            {
+                alert("INFORME PELO MENOS UM CAMPO!");
+                document.getElementById("tempK").style.borderColor = "red";
+                document.getElementById("tempF").style.borderColor = "red";
+                document.getElementById("tempC").style.borderColor = "red";
+            }
+             
+            else if (k != "") {
+                f =(k-273.15) * 9/5 +32;
+                document.getElementById("tempF").value = f; 
+                c = k-273.15;
+                document.getElementById("tempC").value = c;}
+
+            }
+              
+            function Limpar(){
+                document.getElementById("tempF").value="";
+                document.getElementById("tempC").value="";
+                document.getElementById("tempK").value="";
+            }
+
+        
+        </script>
+        
+        <style>
+        input{
+            border-color: grey;
+            border-radius: 5%;
+             }
+        </style>
+      
+    </head>
+    <body>
+        <h1>  Exemplo página com entrada de dados e operações matemáticas </h1>
+
+          <fieldset>
+          <label for="tempF">Farenheit: </label><br>        
+          <input type="number" id="tempF" name="tempF" placeholder=" Farenheit " required><br><br> 
+
+          <label for="tempC">Celsius: </label><br>
+          <input type="number"  name="tempC" id="tempC" placeholder=" Celsius "  required><br><br>
+
+          <label for="tempK">Kelvin: </label><br>
+          <input type="number"  name="tempK" id="tempK" placeholder=" Kelvin "  required></fieldset><br><br>
+              
+          <input type="button" id="btnConverter" onclick="Converter()" value="Converter">
+          <input type="button" id="btnLimpar" onclick="Limpar()" value="Limpar">
+        
+       
+    
+    </body>
+</html>
