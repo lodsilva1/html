@@ -1,62 +1,173 @@
 <!DOCTYPE html>
 <html>
-   <body style="background-color: rgb(243, 243, 152);">
-    <style>
-        h1 {color: black}
-        h1 {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
-        td {color:rgb(15, 15, 15)}
-        h2 {color:black}
-        h2{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    <body style="background-color: rgba(222, 222, 223, 0.788);"></body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Compra e Venda de Carros</title>
+  </head>
+  <body>
+    <header>
+        <style>
+        body {
+            margin: 2;
+            padding: 2;
+          }
+         
+          header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+          }
+         
+          .header-left {
+            display: flex;
+            align-items: center;
+          }
+         
+          .header-left h1 {
+            margin: 0;
+          }
+         
+          .header-right {
+            display: flex;
+            align-items: center;
+          }
+         
+          .header-right ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+         
+          .header-right td {
+            margin-right: 30px;
+          }
+         
+          .header-right a {
+            color: #fff;
+            text-decoration: none;
+          }
+          .login {
+            display: flex;
+            align-items: center;
+          }
+         
+          .search {
+            display: flex;
+            align-items: center;
+          }
+        </style>
 
-    </style>
-<fieldset>
+      <div class="header-left">
+        <h1>LODCARS</h1>
+      </div>
+      <nav class="header-right">
         <table>
-         <tr><td>
-            <h1 style="text-align: left ;"> LODCARS</h1>
-         </td></tr> 
+        <ul>
+          <tr>
+            <td><a href="Compra.html">Compra</a></td><td></td><td></td>
+            <td><a href="Venda.html">Venda</a></td><td></td><td></td>
+            <td><a href="Financiamento.html">Financiamento</a></td><td></td><td></td>
+          </tr>
+        </ul>
+    </table>
+        <div class="Login">
+           <input type="text" placeholder=" Digite o usuario"minlength="5" maxlength="15" required>
+           <button id="btnLogin">Login</button>
+        </div>
+      </nav>
+    </header>
+    <div class="search">
+        <input type="text" placeholder="Digite modelo ou marca do carro "minlength="5" maxlength="20" required>
+        <button id="btnPesquisar">Pesquisar</button><br><br>
+    </div>
+    <main>
+        
+      <center>
+      <fieldset>
+     
+     
+       <img src="  Toro.jpeg  " alt="Carro em destaque 1"width="600" height="380"
+       usemap="#mapimagem7">
+       <map name="mapimagem7">
+           <area shape="default"
+            href="https://toro.fiat.com.br/#/">
+       </map>   
+           
+        <img src=" Onix.avif  " alt="Carro em destaque 2"width="620" height="380"
+        usemap="#mapimagem8">
+        <map name="mapimagem8">
+           <area shape="default"
+           href="https://www.chevrolet.com.br/carros/novo-onix-plus">
+        </map> 
+        
+        <img src="  Bmw328i.jpeg  " alt="Carro em destaque 3"width="580" height="380"
+        usemap="#mapimagem9">
+        <map name="mapimagem9">
+           <area shape="default"
+           href="https://www.bmw.com.br/pt/all-models/3-series/sedan/2022/bmw-serie-3-seda-visao-geral.html">
+        </map>
+   
+    </fieldset><br>
 
-         <tr><td>
-            <p style="text-align: right;">   Compra     Venda     Financiamento      Login </p>
-         </td></tr>
+    <fieldset>
+      <img src="  Fiat.png  " alt="Marcas de Carros"width="180" height="180"
+       usemap="#mapimagem1">
+       <map name="mapimagem1">
+           <area shape="default"
+            href="https://www.fiat.com.br/">
+       </map>
+       
+       <img src="  Chevrolet.png  " alt="Marcas de Carros"width="260" height="210"
+       usemap="#mapimagem2">
+       <map name="mapimagem2">
+          <area shape="default"
+          href="https://www.chevrolet.com/">
+       </map>
+       
+       <img src="  BMW.png  " alt="Marcas de Carros"width="210" height="180"
+        usemap="#mapimagem3">
+        <map name="mapimagem3">
+           <area shape="default"
+           href="https://www.bmw.com/">
+        </map>
 
-         </table>
-</fieldset> 
+        <img src="  Volkswagen.png  " alt="Marcas de Carros"width="180" height="180"
+        usemap="#mapimagem4">
+        <map name="mapimagem4">
+           <area shape="default"
+           href="https://www.vw.com.br/pt.html">
+        </map>
 
-<fieldset>
-<table>
-   <tr>
-     <td> <img src="" alt="Alternativo da imagem" width="500 " height="333"></td>
-     <td> <img src="" alt="Alternativo da imagem" width="500 " height="333"> </td>
-     <td> <img src="" alt="Alternativo da imagem" width="500 " height="333"> </td>
-   </tr>
+        <img src="  Ford.png  " alt="Marcas de Carros"width="280" height="220"
+        usemap="#mapimagem5">
+        <map name="mapimagem5">
+           <area shape="default"
+           href="https://www.ford.com.br/">
+        </map>
 
-   <tr>
-    <td><H2>PACOTES </H2></td>
-    <td><H2>CRUZEIRO </H2></td>
-    <td><H2>VIAGEM</H2></td>
-   </tr>
-</table>
+        <img src="  Hyundai.png  " alt="Marcas de Carros"width="260" height="180"
+        usemap="#mapimagem6">
+        <map name="mapimagem6">
+           <area shape="default"
+           href="https://www.hyundai.com.br/">
+        </map>
+    </fieldset></center><br>
 
-
-      <map name="mapimagem" >
-            <area shape="rect"
-            coords="34,44,270,350" alt="images"
-            href="https://www.apple.com/mac/" >
-</fieldset> 
-
-<fieldset>
-<h2>ENDEREÇO</h2>
-</fieldset>
-
-
-
-   </body>
-
+      </div>
+    </main>
+    <fieldset>
+    <footer>
+       Endereço:Av. Autonomistas 1800 - Osasco-SP cep:06090-010 
+    </footer>
+    <p>Link do endereço 
+        <a href="https://www.google.com.br/maps/place/Av.+dos+Autonomistas,+1800+-+Vila+Yara,+Osasco+-+SP,+06090-010/@-23.5397201,-46.7723159,17z/data=!3m1!4b1!4m5!3m4!1s0x94ceff6b05f2b875:0xdd60b34241b49ea3!8m2!3d-23.539725!4d-46.7701218">google maps</a>.
+    </p>
+    </fieldset>
+      
+  </body>
 </html>
-
-
-<div class="featured-cars">
-<img src="carro1.jpeg" alt="Carro em destaque 1"width="600" height="380">
-<img src="carro2.jpeg" alt="Carro em destaque 2"width="650" height="380">
-<img src="carro3.jpeg" alt="Carro em destaque 3"width="580" height="380">
-</div>
